@@ -4,5 +4,13 @@
     {{else}}
       <button {{action 'imageShow'}}>Show image</button>
     {{/if}}
+    {{#if areDetailsShowing }}
+      <p><strong>Amenities:</strong> {{rental.amenities}}</p>
+      <p><strong>Square Footage:</strong> {{rental.squareFootage}} sq feet</p>
+      <button {{action 'detailsHide'}}>Hide Details</button>
+    {{else}}
+      <button {{action 'detailsShow'}}>Show Details</button>
+    {{/if}}
       <button {{action 'delete' rental}}>Delete</button>
+
 </li>
