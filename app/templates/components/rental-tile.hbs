@@ -10,7 +10,7 @@
       <button class="btn btn-warning" {{action 'detailsHide'}}>Hide Details</button>
     {{else}}
       <button class="btn btn-success" {{action 'detailsShow'}}>Show Details</button>
-    {{/if}}
+    {{/if}}    
       <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
-
+      {{update-rental rental=rental update="update"}}
 </li><br>

@@ -17,6 +17,9 @@ export default Ember.Component.extend({
     detailsHide: function() {
       this.set('areDetailsShowing', false);
     },
+    update(rental,params) {
+      this.sendAction('update', rental, params);
+    },
     delete(rental) {
       if (confirm('Are you sure you want to delete this rental?')) {
         this.sendAction('destroyRental', rental);

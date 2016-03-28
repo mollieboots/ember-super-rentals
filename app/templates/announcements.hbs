@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Announcements </h1>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Important Annoucements</h3>
+
+  <ul>
+    {{#each model as |announcements|}}
+      <h2>{{announcements.title}}</h2>
+      <h4>{{announcements.datePosted}}</h4>
+      <p>{{announcements. message}}</p>
+    {{/each}}
+  </ul>
+
+  <!-- {{new-rental save2="save3"}}<br> -->
+
+  <br>
+  {{#link-to 'index'}}Home{{/link-to}}<br>
+  {{#link-to 'about'}}About{{/link-to}}
+  <br>
+  {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+
+</div>
