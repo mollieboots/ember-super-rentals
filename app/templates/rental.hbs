@@ -3,4 +3,6 @@
 <!-- {{rental-detail rental=model}} -->
 
 {{update-rental rental=model update="update"}}
-<button {{action 'delete' model}}>Delete</button>
+<button class="btn btn-danger" {{action 'delete' model}}>Delete</button>
+<br>
+{{#link-to 'index'}}Go Home{{/link-to}}
