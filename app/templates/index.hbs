@@ -1,17 +1,24 @@
-<h1> Welcome to Super Rentals </h1>
+<div class="jumbotron">
+  <div class="container">
+    <h1> Welcome to Super Rentals </h1>
+  </div>
+</div>
 
-We hope you find exactly what you're looking for in a place to stay.
+<div class="container">
+  <h3>We hope you find exactly what you're looking for in a place to stay.</h3>
 
-<ul>
-  {{#each model as |rental|}}
-    <!-- <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li> -->
-    {{rental-tile rental=rental destroyRental="destroyRental"}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model as |rental|}}
+      <!-- <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li> -->
+      {{rental-tile rental=rental destroyRental="destroyRental"}}
+    {{/each}}
+  </ul>
 
-{{new-rental save2="save3"}}
+  {{new-rental save2="save3"}}<br>
 
-<br>
-{{#link-to 'about'}}About{{/link-to}}
-<br>
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+  <br>
+  {{#link-to 'about'}}About{{/link-to}}
+  <br>
+  {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+
+</div>

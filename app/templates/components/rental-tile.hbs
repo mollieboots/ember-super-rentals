@@ -2,15 +2,15 @@
     {{#if isImageShowing }}
       <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
     {{else}}
-      <button {{action 'imageShow'}}>Show image</button>
+      <button class="btn btn-info" {{action 'imageShow'}}>Show image</button>
     {{/if}}
     {{#if areDetailsShowing }}
       <p><strong>Amenities:</strong> {{rental.amenities}}</p>
       <p><strong>Square Footage:</strong> {{rental.squareFootage}} sq feet</p>
-      <button {{action 'detailsHide'}}>Hide Details</button>
+      <button class="btn btn-warning" {{action 'detailsHide'}}>Hide Details</button>
     {{else}}
-      <button {{action 'detailsShow'}}>Show Details</button>
+      <button class="btn btn-success" {{action 'detailsShow'}}>Show Details</button>
     {{/if}}
-      <button {{action 'delete' rental}}>Delete</button>
+      <button class="btn btn-danger" {{action 'delete' rental}}>Delete</button>
 
-</li>
+</li><br>

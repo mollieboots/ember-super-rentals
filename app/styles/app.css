@@ -1,0 +1,14 @@
+a {
+  font-size: 22px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.new-rental {
+  padding:15px;
+  border-radius: 8px;
+  background-color: #EEE;
+  max-width: 600px;
+}
