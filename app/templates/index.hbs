@@ -8,12 +8,24 @@
   <h3>We hope you find exactly what you're looking for in a place to stay.</h3>
 
   <ul>
-    {{#each model as |rental|}}
+    {{#each model.rentals as |rental|}}
       {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
     {{/each}}
   </ul>
 
   {{new-rental save2="save3"}}<br>
+
+  {{new-city saveCity="saveCity"}}
+
+  <h2>Cities</h2>
+
+  <ul>
+    {{#each model.cities as |city|}}
+      <li>{{city.name}}</li>
+    {{/each}}
+  </ul>
+
+  <hr>
 
   <br>
   {{#link-to 'about'}}About{{/link-to}}

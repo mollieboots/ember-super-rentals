@@ -32,5 +32,12 @@
     "owner" : "Violet Beauregarde",
     "squareFootage" : 1500,
     "type" : "Apartment"
-  } ]
+  } ],
+  "cities": [{
+    "name": "Portland",
+    "country": "USA"
+    }, {
+    "name": "Seattle",
+    "country": "USA"  
+  }]
 }

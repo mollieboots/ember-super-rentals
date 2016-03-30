@@ -1,0 +1,16 @@
+<div class="new-city">
+    <h1>New City</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          {{input value=country id="country"}}
+        </div>
+
+        <button class="btn btn-primary" {{action 'saveCity'}}>Save</button>
+      </form>
+</div>
