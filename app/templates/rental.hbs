@@ -1,8 +1,6 @@
 <h2>More information about {{model.owner}}'s {{model.type}}</h2>
 
-<!-- {{rental-detail rental=model}} -->
+{{rental-detail rental=model delete="delete" update3="update3"}}
 
-{{update-rental rental=model update="update"}}
-<button class="btn btn-danger" {{action 'delete' model}}>Delete</button>
 <br>
 {{#link-to 'index'}}Go Home{{/link-to}}
