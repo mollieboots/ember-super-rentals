@@ -15,7 +15,8 @@ export default Ember.Component.extend({
         image: this.get('image'),
         bedrooms: this.get('bedrooms'),
         amenities: this.get('amenities'),
-        squareFootage: this.get('squareFootage')
+        squareFootage: this.get('squareFootage'),
+        cost: this.get('cost')
       };
       this.set('addNewRental', false);
       this.sendAction('save2', params);

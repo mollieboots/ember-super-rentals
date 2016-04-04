@@ -7,5 +7,6 @@ export default DS.Model.extend({
   image: DS.attr(),
   bedrooms: DS.attr(),
   amenities: DS.attr(),
-  squareFootage: DS.attr()
+  squareFootage: DS.attr(),
+  cost: DS.attr()
 });
