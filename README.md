@@ -1,7 +1,6 @@
 # Super-rentals
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Super Rentals! Check out rentals in your area, and list new ones!
 
 ## Prerequisites
 
